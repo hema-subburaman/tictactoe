@@ -1,0 +1,87 @@
+.welcome-container {
+  height: 100vh;
+  width: 100%;
+  background: #1f3540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-title span {
+  color: #25ffcb;
+}
+
+.welcome-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.start-btn {
+  color: #25ffcb;
+  color: #000;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  background-color: #25ffcb;
+}
+
+/* Default (desktop) styles are already there */
+
+/* 📱 For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .welcome-container {
+    padding: 30px;
+  }
+
+  .welcome-container h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-buttons button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+/* 📱 For mobile phones */
+@media (max-width: 600px) {
+  .welcome-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .welcome-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .welcome-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
